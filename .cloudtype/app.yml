@@ -1,0 +1,11 @@
+name: spring-blog
+app:
+  env:
+    - name: SERVER_PORT
+      value: "8080"
+  ports:
+    - 8080
+  start: java -jar app.jar
+  build:
+    dockerfile: Dockerfile
+    context: .
